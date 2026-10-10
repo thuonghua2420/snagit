@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SnapGit.App</RootNamespace>
+    <AssemblyName>SnapGit</AssemblyName>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <ApplicationVisualStyles>true</ApplicationVisualStyles>
+    <ApplicationUseCompatibleTextRendering>false</ApplicationUseCompatibleTextRendering>
+    <ApplicationDefaultFont>Segoe UI, 9pt</ApplicationDefaultFont>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\SnapGit.ico</ApplicationIcon>
+    <Description>SnapGit - screenshot, screen recording and annotation tool</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="SnapGit.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SnapGit.Core\SnapGit.Core.csproj" />
+    <ProjectReference Include="..\SnapGit.Platform\SnapGit.Platform.csproj" />
+    <ProjectReference Include="..\SnapGit.Editor\SnapGit.Editor.csproj" />
+  </ItemGroup>
+
+</Project>

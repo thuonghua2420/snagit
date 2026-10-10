@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>SnapGit.Platform</RootNamespace>
+    <AssemblyName>SnapGit.Platform</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SnapGit.Core\SnapGit.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- WASAPI loopback (system audio) + microphone capture, resampling. MIT licensed. -->
+    <PackageReference Include="NAudio.Wasapi" Version="2.2.1" />
+  </ItemGroup>
+
+</Project>

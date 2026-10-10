@@ -1,0 +1,16 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <Deterministic>true</Deterministic>
+    <Version>0.2.0</Version>
+    <Company>SnapGit</Company>
+    <Product>SnapGit</Product>
+    <!-- CA1416 (platform compat) is noise: every project is Windows-only by design. -->
+    <NoWarn>$(NoWarn);CA1416;CA1860;CA1805;CA1822;CA1859;CA2201</NoWarn>
+  </PropertyGroup>
+</Project>
